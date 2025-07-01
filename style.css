@@ -1,0 +1,91 @@
+body {
+    background: #000000;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #ffffff;
+    margin: 20px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.board {
+    grid-template-columns: repeat(3, 100px);
+    gap: 10px;
+    margin: 20px auto;
+    width: max-content;    
+    display: grid;
+}
+
+.cell {
+    height: 100px;
+    font-size: 2em;
+    background: rgb(255, 249, 160);
+    border: 2px solid #cb0000;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+}
+
+.cell.taken {
+    color: #04007e;
+    cursor: not-allowed;
+}
+
+button {
+    font-size: 1rem;
+    margin: 10px;
+    padding: 10px 20px;
+}
+
+/* Menu */
+#menu {
+    margin-top: 20px;
+}
+
+#menu button {
+    margin: 5px;
+}
+
+/* Floating message */
+#floating-msg {
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #222;
+    color: white;
+    font-size: 2rem;
+    padding: 20px 40px;
+    border-radius: 12px;
+    display: none;
+    z-index: 999;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    position: fixed;
+}
+#controls {
+    margin-top: 20px;
+}
+
+#controls button {
+    margin: 0 10px;
+    padding: 10px 25px;
+    font-size: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+    

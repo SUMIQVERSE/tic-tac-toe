@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>TIC TAC TOE</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+</head>
+<body>
+    
+    <h1>Tic Tac Toe</h1>
+    <div id="menu">
+        <!-- Game Setup -->
+    <h2>Select Game Mode</h2>
+    <button onclick="chooseMode('single')">Single Player</button>
+    <button onclick="chooseMode('multi')">Multiplayer</button>
+
+    <div id="level-select" style="display: none;">
+        <button onclick="startGame('easy')">Easy</button>
+        <button onclick="startGame('medium')">Medium</button>
+        <button onclick="startGame('hard')">Hard</button>
+        <h3>Select Difficulty</h3>
+    </div>
+    
+</div>
+<div id="game-area" style="display: none;">
+        <!-- Game Board -->
+    <div id="board" class="board"></div>
+    <p id="status">Player X's turn</p>
+    <div id="controls">
+        <button id="home">Home</button>
+        <button id="replay">Replay</button>
+    </div>
+
+
+    <!-- Floating Message -->
+    <div id="floating-msg"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
